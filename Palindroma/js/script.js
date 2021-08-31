@@ -14,8 +14,17 @@ function getPalindromo(parola){
     return false;
 }
 
+//if(getPalindromo(parolautente)){
+//    alert("COMPLIMENTI! LA PAROLA CHE HAI INSERITO É PALINDROMA!");
+//} else {
+//    alert("RIPROVA!");
+//}
+
+while(getPalindromo(parolautente) == false){
+    alert("RIPROVA!");
+    parolautente = prompt("Inserici una parola che tu pensi sia palindroma");
+}
+
 if(getPalindromo(parolautente)){
     alert("COMPLIMENTI! LA PAROLA CHE HAI INSERITO É PALINDROMA!");
-} else {
-    alert("RIPROVA!");
 }
